@@ -7,5 +7,8 @@ app = Flask(__name__)
 def home():
     return '<h1>This is an index page</h1>'
 
+@app.route('/new')
+def new():
+    return '<h1>This is a new page</h1>'
 
 app.run()
