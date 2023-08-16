@@ -11,4 +11,8 @@ def home():
 def new():
     return '<h1>This is a new page</h1>'
 
+@app.route('/demo')
+def demo():
+    return '<h1>This is a demo page</h1>'
+
 app.run()
