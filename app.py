@@ -17,5 +17,7 @@ app = Flask(__name__)
 
 
 @app.route('/profile')
+def profile():
+    return '<h1>This is a profile page</h1>'
 
 app.run()
