@@ -20,4 +20,4 @@ app = Flask(__name__)
 def profile(id):
     return '<h1>This is a profile page for %d</h1>' % id
 
-app.run()
+app.run(debug=True)
