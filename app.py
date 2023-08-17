@@ -16,7 +16,7 @@ app = Flask(__name__)
 #     return '<h1>This is a demo page</h1>'
 
 
-@app.route('/profile/john')
+@app.route('/profile/<username>')
 def profile():
     return '<h1>This is a profile page for john</h1>'
 
