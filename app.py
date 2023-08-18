@@ -20,4 +20,9 @@ app = Flask(__name__)
 # def profile(id):
 #     return '<h1>This is a profile page for %d</h1>' % id
 
+
+@app.route('/admin')
+def welcome_admin():
+    return 'Welcome admin'
+
 app.run(debug=True)
