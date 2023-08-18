@@ -25,4 +25,8 @@ app = Flask(__name__)
 def welcome_admin():
     return 'Welcome admin'
 
+@app.route('/guest/<guest>')
+def welcome_guest():
+    return 'Welcome guest, %s' % guest
+
 app.run(debug=True)
