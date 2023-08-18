@@ -16,8 +16,8 @@ app = Flask(__name__)
 #     return '<h1>This is a demo page</h1>'
 
 
-@app.route('/profile/<int:id>')
-def profile(id):
-    return '<h1>This is a profile page for %d</h1>' % id
+# @app.route('/profile/<int:id>')
+# def profile(id):
+#     return '<h1>This is a profile page for %d</h1>' % id
 
 app.run(debug=True)
