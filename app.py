@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for, request
 
 app = Flask(__name__)
 
@@ -39,6 +39,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'This is a request made by the client'
+    return 'This is a request made by the client %s' % request.headers
+
+
 
 app.run(debug=True)
