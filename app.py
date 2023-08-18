@@ -21,20 +21,20 @@ app = Flask(__name__)
 #     return '<h1>This is a profile page for %d</h1>' % id
 
 
-@app.route('/admin')
-def welcome_admin():
-    return 'Welcome admin'
+# @app.route('/admin')
+# def welcome_admin():
+#     return 'Welcome admin'
 
-@app.route('/guest/<guest>')
-def welcome_guest(guest):
-    return 'Welcome guest, %s' % guest
+# @app.route('/guest/<guest>')
+# def welcome_guest(guest):
+#     return 'Welcome guest, %s' % guest
 
-@app.route('/user/<name>')
-def welcome_user(name):
-    if name == 'admin':
-        return redirect(url_for('welcome_admin'))
-    else:
-        return redirect(url_for('welcome_guest', guest=name))
+# @app.route('/user/<name>')
+# def welcome_user(name):
+#     if name == 'admin':
+#         return redirect(url_for('welcome_admin'))
+#     else:
+#         return redirect(url_for('welcome_guest', guest=name))
 
 
 app.run(debug=True)
