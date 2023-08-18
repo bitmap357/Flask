@@ -37,4 +37,8 @@ app = Flask(__name__)
 #         return redirect(url_for('welcome_guest', guest=name))
 
 
+@app.route('/')
+def index():
+    return 'This is a request made by the client'
+
 app.run(debug=True)
