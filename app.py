@@ -46,9 +46,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/profile/john')
-def profile():
-    return render_template('profile.html')
+@app.route('/profile/<username>')
+def profile(username):
+    return render_template('profile.html', username=username)
 
 
 app.run(debug=True)
