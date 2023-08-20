@@ -48,8 +48,8 @@ def index():
 
 @app.route('/profile/<username>')
 def profile(username):
-    isActive = True
-    return render_template('profile.html', username=username)
+    
+    return render_template('profile.html', username=username, isActive = True)
 
 
 app.run(debug=True)
