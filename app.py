@@ -54,5 +54,6 @@ def profile(username):
 @app.route('/books')
 def books():
     books = ['Book1', 'Book2', 'Book3']
+    return render_template()
 
 app.run(debug=True)
