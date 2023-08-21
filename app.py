@@ -51,5 +51,8 @@ def profile(username):
     
     return render_template('profile.html', username=username, isActive = True)
 
+@app.route('/books')
+def books():
+    
 
 app.run(debug=True)
