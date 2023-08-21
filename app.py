@@ -53,6 +53,6 @@ def profile(username):
 
 @app.route('/books')
 def books():
-    
+    books = ['Book1', 'Book2', 'Book3']
 
 app.run(debug=True)
