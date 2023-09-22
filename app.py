@@ -59,8 +59,8 @@ def profile(username):
 @app.route('/books')
 def books():
     books = [{'name':'Book1', 'author': 'Author1', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'},
-             {'name':'Book2', 'author': 'Author2'},
-             {'name':'Book3', 'author': 'Author3'}]
+             {'name':'Book2', 'author': 'Author2', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'},
+             {'name':'Book3', 'author': 'Author3', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'}]
     return render_template('books.html', books=books)
 
 app.run(debug=True) 
