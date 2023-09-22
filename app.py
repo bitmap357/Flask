@@ -51,6 +51,11 @@ def profile(username):
     
     return render_template('profile.html', username=username, isActive = True)
 
+# @app.route('/books')
+# def books():
+#     books = ['Book1', 'Book2', 'Book3']
+#     return render_template('books.html', books=books)
+
 @app.route('/books')
 def books():
     books = ['Book1', 'Book2', 'Book3']
