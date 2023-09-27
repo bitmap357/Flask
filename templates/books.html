@@ -20,6 +20,7 @@
         </div>
 
     </div>
+    {% endblock %}
 
     {% for book in books %}
     <ul>
@@ -28,7 +29,6 @@
             {{book.name}} by {{book.author}}</li>
     </ul>
     {% endfor %}
-    {% endblock %}
 </body>
 </html>
 
