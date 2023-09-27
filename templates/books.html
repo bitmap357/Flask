@@ -1,3 +1,4 @@
+{% block body %}
 {% for book in books %}
 <ul>
     <li>
@@ -5,4 +6,4 @@
         {{book.name}} by {{book.author}}</li>
 </ul>
 {% endfor %}
-
+{% endblock %}
