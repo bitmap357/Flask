@@ -43,6 +43,8 @@ app = Flask(__name__)
 
 
 @app.route('/addbook')
+def addbook():
+    return render_template('addbook.html')
 
 @app.route('/')
 def index():
