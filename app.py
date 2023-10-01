@@ -42,6 +42,8 @@ app = Flask(__name__)
 #     return 'This is a request made by the client %s' % request.headers
 
 
+@app.route('/addbook')
+
 @app.route('/')
 def index():
     return render_template('index.html')
