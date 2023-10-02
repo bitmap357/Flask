@@ -46,9 +46,9 @@ app = Flask(__name__)
 def addbook():
     return render_template('addbook.html')
 
-@app.route('/submitbook')
+@app.route('/submitbook', methods=['POST'])
 def submitbook():
-    
+    return 
 
 @app.route('/')
 def index():
