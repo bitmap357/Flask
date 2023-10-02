@@ -48,7 +48,8 @@ def addbook():
 
 @app.route('/submitbook', methods=['POST'])
 def submitbook():
-    return 
+    name = request.form['name']
+    author = request.form['author']
 
 @app.route('/')
 def index():
