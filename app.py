@@ -47,7 +47,8 @@ def addbook():
     return render_template('addbook.html')
 
 @app.route('/submitbook')
-
+def submitbook():
+    
 
 @app.route('/')
 def index():
