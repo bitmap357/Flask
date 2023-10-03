@@ -11,6 +11,9 @@ app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = database_file
 db = SQLAlchemy(app)
 
+class Book(db.Model):
+    
+
 
 @app.route('/addbook')
 def addbook():
