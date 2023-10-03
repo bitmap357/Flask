@@ -12,7 +12,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = database_file
 db = SQLAlchemy(app)
 
 class Book(db.Model):
-    
+    name = db.Column(db.String(100),unique=True,nullable=False, primary_key=True)
 
 
 @app.route('/addbook')
