@@ -9,7 +9,7 @@ database_file = "sqlite:///{}".format(
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = database_file
-
+db = SQLAlchemy(app)
 
 
 @app.route('/addbook')
