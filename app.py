@@ -2,6 +2,8 @@ from flask import Flask, redirect, url_for, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 import os
 
+
+project_dir = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 
 
