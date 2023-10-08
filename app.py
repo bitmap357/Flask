@@ -31,6 +31,8 @@ def submitbook():
 
 @app.route('/')
 def index():
+    with app.app_context():
+        pass
     return render_template('index.html')
 
 @app.route('/profile/<username>')
@@ -51,6 +53,5 @@ def books():
     return render_template('books.html', books=books)
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
+   
     app.run(debug=True) 
