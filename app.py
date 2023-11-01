@@ -52,5 +52,5 @@ def books():
              {'name':'Book3', 'author': 'Author3', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'}]
     return render_template('books.html', books=books)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True) 
