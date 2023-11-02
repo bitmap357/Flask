@@ -28,6 +28,8 @@ def submitbook():
     name = request.form['name']
     author = request.form['author']
     book = Book(name=name, author=author)
+    db.session.add(book)
+    db.session.commit()
     return 'Book name is %s and author is %s' % (name,author)
 
 @app.route('/')
