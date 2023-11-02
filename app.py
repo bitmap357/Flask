@@ -27,6 +27,7 @@ def addbook():
 def submitbook():
     name = request.form['name']
     author = request.form['author']
+    book = Book(name=name, author=author)
     return 'Book name is %s and author is %s' % (name,author)
 
 @app.route('/')
