@@ -18,8 +18,9 @@ class Book(db.Model):
                        nullable=False)
 
 
-@app.route('/update')
-
+@app.route('/updatebooks')
+def updatebooks():
+    
 
 
 @app.route('/addbook')
