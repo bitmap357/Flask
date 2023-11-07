@@ -30,7 +30,7 @@ def submitbook():
     book = Book(name=name, author=author)
     db.session.add(book)
     db.session.commit()
-    return 'Book name is %s and author is %s' % (name,author)
+    return 'Data submitted successfully! Book name is %s and author is %s' % (name,author)
 
 @app.route('/')
 def index():
