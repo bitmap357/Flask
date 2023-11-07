@@ -43,17 +43,17 @@ def profile(username):
     
     return render_template('profile.html', username=username, isActive = True)
 
-# @app.route('/books')
-# def books():
-#     books = ['Book1', 'Book2', 'Book3']
-#     return render_template('books.html', books=books)
-
 @app.route('/books')
 def books():
-    books = [{'name':'Book1', 'author': 'Author1', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'},
-             {'name':'Book2', 'author': 'Author2', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'},
-             {'name':'Book3', 'author': 'Author3', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'}]
+    books = ['Book1', 'Book2', 'Book3']
     return render_template('books.html', books=books)
+
+# @app.route('/books')
+# def books():
+#     books = [{'name':'Book1', 'author': 'Author1', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'},
+#              {'name':'Book2', 'author': 'Author2', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'},
+#              {'name':'Book3', 'author': 'Author3', 'cover':'https://designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg'}]
+#     return render_template('books.html', books=books)
 
 if __name__ == "__main__":
     app.run(debug=True) 
