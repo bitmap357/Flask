@@ -20,7 +20,7 @@ class Book(db.Model):
 
 @app.route('/updatebooks')
 def updatebooks():
-    
+    books = Book.query.all()
 
 
 @app.route('/addbook')
