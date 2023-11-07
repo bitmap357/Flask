@@ -30,7 +30,7 @@ def submitbook():
     book = Book(name=name, author=author)
     db.session.add(book)
     db.session.commit()
-    return 'Data submitted successfully! Book name is %s and author is %s' % (name,author)
+    return redirect('/books')
 
 @app.route('/')
 def index():
