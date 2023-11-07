@@ -21,6 +21,7 @@ class Book(db.Model):
 @app.route('/updatebooks')
 def updatebooks():
     books = Book.query.all()
+    return render_template('updatebooks.html', books=books)
 
 
 @app.route('/addbook')
