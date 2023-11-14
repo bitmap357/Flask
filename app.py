@@ -24,6 +24,11 @@ def updatebooks():
     return render_template('updatebooks.html', books=books)
 
 
+@app.route('/update', methodS=['POST'])
+def update():
+    newname = request.form['newname']
+    newauthor = request.form['newauthor']
+
 @app.route('/addbook')
 def addbook():
     return render_template('addbook.html')
