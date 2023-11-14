@@ -30,7 +30,10 @@ def update():
     oldname = request.form['oldname']
     newauthor = request.form['newauthor']
     
-    book = Book.query.filter_by(name=oldname)
+    book = Book.query.filter_by(name=oldname).first()
+    book.name = newname
+    book.author = newauthor
+    db.session.commit()
 
 @app.route('/addbook')
 def addbook():
