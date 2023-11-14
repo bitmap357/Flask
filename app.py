@@ -27,7 +27,10 @@ def updatebooks():
 @app.route('/update', methodS=['POST'])
 def update():
     newname = request.form['newname']
+    oldname = request.form['oldname']
     newauthor = request.form['newauthor']
+    
+    book = Book.query.filter_by(name=oldname)
 
 @app.route('/addbook')
 def addbook():
