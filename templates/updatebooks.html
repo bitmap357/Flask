@@ -4,6 +4,10 @@
 {% for book in books %}
 
 <h3>{{book.name}}</h3>
+<form action="/update" method='POST'>
+    <input type="text" value="{{book.name}}">
+    <input type="text" value="{{book.author}}">
+</form>
 
 {% endfor %}
 
