@@ -36,7 +36,10 @@ def update():
     db.session.commit()
     return redirect('/books')
 
-@
+@app.route('/delete')
+def delete():
+    name = request.form['name']
+    
 
 @app.route('/addbook')
 def addbook():
