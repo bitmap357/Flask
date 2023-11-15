@@ -42,6 +42,7 @@ def delete():
     book = Book.query.filter_by(name=name).first()
     db.session.delete(book)
     db.session.commit()
+    return redirect('/books')
 
 @app.route('/addbook')
 def addbook():
