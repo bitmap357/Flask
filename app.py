@@ -34,6 +34,7 @@ def update():
     book.name = newname
     book.author = newauthor
     db.session.commit()
+    return redirect('/books')
 
 @app.route('/addbook')
 def addbook():
