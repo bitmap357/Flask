@@ -36,6 +36,8 @@ def update():
     db.session.commit()
     return redirect('/books')
 
+@
+
 @app.route('/addbook')
 def addbook():
     return render_template('addbook.html')
