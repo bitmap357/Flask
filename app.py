@@ -36,7 +36,7 @@ def update():
     db.session.commit()
     return redirect('/books')
 
-@app.route('/delete')
+@app.route('/delete', methods=['POST'])
 def delete():
     name = request.form['name']
     book = Book.query.filter_by(name=name).first()
