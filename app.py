@@ -39,7 +39,9 @@ def update():
 @app.route('/delete')
 def delete():
     name = request.form['name']
-    
+    book = Book.query.filter_by(name=name).first()
+    db.session.delete(book)
+    db.session.commit()
 
 @app.route('/addbook')
 def addbook():
